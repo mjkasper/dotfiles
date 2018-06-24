@@ -16,10 +16,11 @@ fi
 ##############################################################################
 
 if [ "$INSTALL_NEOVIM" = true ]; then
+    echo "Installing NeoVim..."
     # download the neovim binary and save it as $(DEFAULT_BIN_PATH)/neovim
     curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
-    chmod u+x neovim.appimage
-    mv neovim.appimage "$DEFAULT_BIN_PATH"/nvim
+    chmod u+x nvim.appimage
+    mv nvim.appimage "$DEFAULT_BIN_PATH"/nvim
 
     # add the binary directory to our PATH variable
     echo "export \"PATH=${DEFAULT_BIN_PATH}:$PATH\"" >> ~/.bashrc
@@ -48,14 +49,20 @@ fi
 
 # if requested, include a new ~/.bashrc
 if [ "$INSTALL_BASHRC" = true ]; then
+    echo "Installing ~/.bashrc..."
     cat ./bashrc > ~/.bashrc
 fi
 
 # if requested, include a new ~/.bash_profile
 if [ "$INSTALL_BASH_PROFILE" = true ]; then
+    echo "Installing ~/.bash_profile..."
     cat ./bash_profile > ~/.bash_profile
 fi
 
 # run the ~/.bashrc to reflect any new changes
 source ~/.bashrc
+
+# success!
+echo "Done!"
+
 
