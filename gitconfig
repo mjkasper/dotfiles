@@ -3,8 +3,16 @@
     email = mkasper@andrew.cmu.edu
 
 [alias]
+    # quick ways to switch between/create branches
     co = checkout
     cob = checkout -b
+
+    # stage and commit all files (use carefully!)
+    ac = !git add -A && git commit -m
+    
+    # undo most recent commit
+    undo-last = reset --soft HEAD~1
+    
+    # fancy logs
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-

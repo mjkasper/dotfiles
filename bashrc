@@ -23,7 +23,9 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # quickly enable a python virtual environment
-alias venv='source ~/venv/bin/activate'
+alias venv='source venv/bin/activate'
+
+# use neovim instead of vim
 alias vim='nvim'
 alias vi='nvim'
 
@@ -34,13 +36,7 @@ alias ls="ls -GFh"
 
 # useful git aliases
 alias g="git"
-alias gac='git add -A && git commit '
 
 # get line wrapping from the sml interpreter
 alias sml="rlwrap sml"
 
-alias afsmount="sshfs mkasper@linux.andrew.cmu.edu:/afs/andrew.cmu.edu/usr14/mkasper/private"
-alias afsunmount="diskutil unmount"
-
-# quick alias to ssh onto OS machines with x11 forwarding enabled
-alias sshos="ssh -X -o 'ForwardX11Timeout 7d' mkasper@linux.andrew.cmu.edu"
