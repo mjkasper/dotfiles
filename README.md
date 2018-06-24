@@ -26,7 +26,7 @@ When you open Vim for the first time, it may complain that the Solarized color s
 - [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 - [NeoSolarized](https://github.com/icymind/NeoSolarized)
 - [ctrlp](https://github.com/kien/ctrlp.vim)
-- [lightline] (https://github.com/itchyny/lightline.vim)
-- [vim-surround] (https://github.com/tpope/vim-surround)
+- [lightline](https://github.com/itchyny/lightline.vim)
+- [vim-surround](https://github.com/tpope/vim-surround)
 
 To add your own plugins, simply list them between the lines of your `init.vim` that say `call plug#begin('~/.config/nvim/plugged')` and `call plug#end()`. Then, start up Vim and re-run `:PlugInstall` to install your new plugins.
