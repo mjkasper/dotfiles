@@ -28,6 +28,14 @@ set background=dark
 colorscheme NeoSolarized
 
 " ----------------------------------------------------------------------
+" ------------------------- nerd tree settings -------------------------
+" ----------------------------------------------------------------------
+
+" open nerdtree tab by default when opening a directory with vim
+" Note: running `vim .` will open nerdtree but just running `vim` won't
+let g:nerdtree_tabs_open_on_console_startup=2
+
+" ----------------------------------------------------------------------
 " ----------------------- nerd commenter settings ----------------------
 " ----------------------------------------------------------------------
 
