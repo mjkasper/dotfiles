@@ -1,5 +1,4 @@
 #!/usr/bin/env bashrc
-source ~/.git-prompt.sh
 
 # Set up system path variable
 export PATH="$HOME/bin:$PATH"
