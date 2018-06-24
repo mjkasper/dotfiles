@@ -1,0 +1,10 @@
+[user]
+    name = mjkasper
+    email = mkasper@andrew.cmu.edu
+
+[alias]
+    co = checkout
+    cob = checkout -b
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+

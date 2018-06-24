@@ -21,3 +21,10 @@ INSTALL_BASHRC=true
 # If set to true, the install.sh script will create a ~/.bash_profile containing
 # the contents of the ./bash_profile file in this directory.
 INSTALL_BASH_PROFILE=true
+
+# If set to true, the install.sh script will populate ~/.gitconfig with the
+# settings contained in ./gitconfig (you'll need to edit settings like
+# user.name and user.email before using this setting unless you want to give 
+# me credit for your contributions).
+INSTALL_GITCONFIG=true
+

@@ -44,6 +44,16 @@ if [ "$INSTALL_NEOVIM" = true ]; then
 fi
 
 ##############################################################################
+#                         Install Git Configurations                         #
+##############################################################################
+
+# if requested, copy my gitconfig into ~/.gitconfig
+if [ "$INSTALL_GITCONFIG" = true]; then
+    echo "Installing git configurations..."
+    cat ./gitconfig > ~/.gitconfig
+fi
+
+##############################################################################
 #                           Install Bash Settings                            #
 ##############################################################################
 
